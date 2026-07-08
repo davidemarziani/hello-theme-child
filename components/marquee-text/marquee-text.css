@@ -1,0 +1,32 @@
+.marquee-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-text__track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+.marquee-text__item {
+    display: inline-block;
+    padding-right: 5rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--e-global-typography-secondary-font-family);
+    font-size: 7.5rem;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+
+    .marquee-text__item {
+        padding-right: 2.25rem;
+        font-size: 3rem;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,62 @@
+/****************************************
+* HTC - custom CSS
+*/
+
+/***************************************
+*                COLORI                *    
+***************************************/
+/*
+
+//COLORE1
+var(--e-global-color-): #000000;
+
+//COLORE2
+var(--e-global-color-): #000000;
+
+//COLORE3
+var(--e-global-color-): #000000;
+
+//COLORE4
+var(--e-global-color-): #000000;
+
+//COLORE5
+var(--e-global-color-): #000000;
+
+*/
+
+body.home,
+html:has(body.home) {
+    overflow-x: hidden;
+}
+
+/*Remove page title*/
+h1.entry-title {
+    display: none;
+}
+
+/*html font-size for rem*/
+@media screen and (min-width: 767px) {
+    html {
+        font-size: 1.04166667vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/*Remove margin bottom in every last p in text editor widget of elementor*/
+.elementor-widget-text-editor .elementor-widget-container>p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/*Disable lightblue highlight on click*/
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:focus {
+    outline: none !important;
+}
