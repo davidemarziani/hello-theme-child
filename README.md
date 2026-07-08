@@ -1,59 +1,59 @@
 # Hello Theme Child
 
-Hello Theme Child è un tema child per Hello Elementor, pensato per estendere il tema padre con stili personalizzati, componenti riutilizzabili, asset gestiti in modo modulare e un sistema semplice per aggiungere funzionalità frontend.
+Hello Theme Child is a child theme for Hello Elementor, designed to extend the parent theme with custom styles, reusable components, modularly managed assets, and a simple structure for adding frontend features.
 
-## Funzionalità principali
+## Main features
 
-- Gestione centralizzata di CSS e JS tramite la cartella includes/setup
-- Supporto per componenti modulari nella cartella components
-- Reload automatico dei file CSS in ambiente di sviluppo
-- Struttura pronta per estensioni future e personalizzazioni rapide
+- Centralized management of CSS and JS through the includes/setup folder
+- Support for modular components in the components folder
+- Automatic CSS file reload during development
+- A structure ready for future extensions and fast customization
 
-## Requisiti
+## Requirements
 
 - WordPress
-- Tema padre: Hello Elementor
+- Parent theme: Hello Elementor
 
-## Installazione
+## Installation
 
-1. Copia la cartella del tema child nella directory delle theme di WordPress:
+1. Copy the child theme folder into your WordPress themes directory:
    `wp-content/themes/`
-2. Attiva il tema dal pannello di amministrazione di WordPress.
-3. Personalizza i file presenti nella cartella assets e nei componenti secondo le tue esigenze.
+2. Activate the theme from the WordPress admin panel.
+3. Customize the files in the assets folder and the components according to your needs.
 
-## Struttura del progetto
+## Project structure
 
-- assets/ : file CSS e JS globali
-- components/ : componenti riutilizzabili con CSS/JS/PHP dedicati
-- helpers/ : funzioni di supporto
-- includes/ : logica di setup, pagine e inclusioni PHP
-- functions.php : punto di ingresso principale del tema child
-- style.css : file principale di stile del tema
+- assets/ : global CSS and JS files
+- components/ : reusable components with dedicated CSS/JS/PHP files
+- helpers/ : support functions
+- includes/ : setup logic, pages, and PHP includes
+- functions.php : main entry point of the child theme
+- style.css : main stylesheet of the theme
 
-## Personalizzazione
+## Customization
 
-### Stili globali
+### Global styles
 
-Aggiungi o modifica i file CSS nella cartella assets/css/.
+Add or edit CSS files in the assets/css/ folder.
 
-### Script globali
+### Global scripts
 
-Aggiungi o modifica i file JS nella cartella assets/js/.
+Add or edit JS files in the assets/js/ folder.
 
-### Componenti
+### Components
 
-Per aggiungere un nuovo componente, crea una nuova cartella dentro components/ con i file:
+To add a new component, create a new folder inside components/ with these files:
 
-- nome-componente.php
-- nome-componente.css
-- nome-componente.js
+- component-name.php
+- component-name.css
+- component-name.js
 
-Poi registralo in includes/setup/components-loader.php.
+Then register it in includes/setup/components-loader.php.
 
-## Sviluppo
+## Development
 
-Il tema include un meccanismo di live reload per i file CSS, utile durante lo sviluppo. Se non vuoi usarlo, puoi disabilitarlo direttamente nella funzione dedicata in functions.php.
+The theme includes a live reload mechanism for CSS files, useful during development. If you do not want to use it, you can disable it directly in the dedicated function inside functions.php.
 
-## Licenza
+## License
 
-Questo progetto è distribuito con licenza GNU General Public License v3 o successiva.
+This project is distributed under the GNU General Public License v3 or later.
