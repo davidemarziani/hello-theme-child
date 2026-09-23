@@ -12,11 +12,11 @@
 function htc_register_components()
 {
     return [
-        'marquee-text' => [
-            'css_deps' => [],
-            'js_deps'   => ['htc-gsap'],
-            'in_footer' => true,
-        ],
+        // 'test-shortcode' => [
+        //     'css_deps' => [],
+        //     'js_deps'   => [],
+        //     'in_footer' => true,
+        // ],
     ];
 }
 
@@ -73,12 +73,9 @@ function htc_load_components()
 
         if (file_exists($file)) {
             require_once $file;
+        } else {
+            htc_log("Impossibile leggere il file `$file` per l'inclusione!", 'components-loader');
         }
-        // else {
-        //     if (defined('WP_DEBUG') && WP_DEBUG) {
-        //         trigger_error("Impossibile leggere il file `$file` per l'inclusione!", E_USER_WARNING);
-        //     }
-        // }
     }
 }
 add_action('after_setup_theme', 'htc_load_components');

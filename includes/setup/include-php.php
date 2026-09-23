@@ -20,7 +20,7 @@ foreach ($roots_includes as $file) {
     if (file_exists($file_path)) {
         require_once $file_path;
     } else {
-        trigger_error("Impossibile leggere il file `$file` per l'inclusione!", E_USER_ERROR);
+        htc_log("Impossibile leggere il file `$file` per l'inclusione!", 'include-php');
     }
 }
 

@@ -12,16 +12,16 @@ jQuery(document).ready(function () {
 /****************************************
  * Remove # from "Scroll down" button URL
  */
-jQuery(document).ready(function () {
-    const scrollDownButton = jQuery('.htc-scroll-down-button');
+// jQuery(document).ready(function () {
+//     const scrollDownButton = jQuery('.htc-scroll-down-button');
 
-    scrollDownButton.click(() => {
-        setTimeout(() => {
-            removeHash();
-        }, 5);
+//     scrollDownButton.click(() => {
+//         setTimeout(() => {
+//             removeHash();
+//         }, 5);
 
-        function removeHash() {
-            history.replaceState('', document.title, window.location.origin + window.location.pathname);
-        }
-    });
-});
+//         function removeHash() {
+//             history.replaceState('', document.title, window.location.origin + window.location.pathname);
+//         }
+//     });
+// });
