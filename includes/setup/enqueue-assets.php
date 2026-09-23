@@ -14,8 +14,8 @@ function htc_enqueue_additional_styles_scripts()
 
     $externals = [
         //[
-        // 'handle' => 'kursor', // Unique handle for the external script
-        // 'url'    => 'https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js', // URL of the external script
+        // 'handle' => '', // Unique handle for the external script
+        // 'url'    => '', // URL of the external script
         // 'deps'   => [], // Dependencies (if any)
         // 'in_footer' => false // Load script in footer (true) or header (false)
         //],
